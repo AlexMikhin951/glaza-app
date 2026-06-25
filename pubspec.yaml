@@ -1,0 +1,43 @@
+name: glaza_app
+description: "Smart glasses companion app — FPV, YOLO detection, voice navigation, OCR and offline maps for ESP32-CAM."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.8
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_tts: ^3.8.3
+  tflite_flutter: ^0.12.1
+  flutter_blue_plus: ^1.31.8
+  network_info_plus: ^5.0.3
+  permission_handler: ^11.3.0
+  ultralytics_yolo: ^0.3.5
+  cupertino_icons: ^1.0.8
+  speech_to_text: ^7.4.0      
+  app_settings: ^5.1.1  
+  shared_preferences: ^2.2.3       
+  google_mlkit_text_recognition: ^0.13.0  # OCR
+  flutter_map: ^6.1.0                      # карта                    # GPS
+  latlong2: ^0.9.0                         # координаты
+  image: ^4.1.7                            # анализ пикселей светофора
+  just_audio: ^0.9.36                      # стерео бипы
+  flutter_compass: ^0.8.0                  # азимут для карты 
+  vibration: ^3.0.0
+  geolocator: ^11.0.0
+  http: ^1.2.0
+  path_provider: ^2.1.2 
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/models/best.tflite
+    - assets/models/labels.txt
