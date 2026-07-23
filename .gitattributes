@@ -1,0 +1,10 @@
+# Ensure Dart/Flutter source is counted for GitHub language stats
+*.dart linguist-detectable=true
+lib/** linguist-documentation=false
+
+android/** linguist-generated=true
+ios/** linguist-generated=true
+linux/** linguist-generated=true
+macos/** linguist-generated=true
+windows/** linguist-generated=true
+web/** linguist-generated=true
