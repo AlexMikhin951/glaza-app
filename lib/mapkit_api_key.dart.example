@@ -1,0 +1,8 @@
+/// Шаблон API-ключа Yandex MapKit Mobile SDK.
+///
+/// 1. Скопируйте в `mapkit_api_key.dart`
+/// 2. Вставьте ключ с https://developer.tech.yandex.ru/services/
+///
+/// Или передайте при запуске:
+///   flutter run --dart-define=MAPKIT_API_KEY=ваш_ключ
+const String kYandexMapkitApiKey = '';
